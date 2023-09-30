@@ -73,7 +73,6 @@ systemctl start shipping &>>$LOGFILE
 
 VALIDATE $? "Starting shipping"
 
-
 yum install mysql -y  &>>$LOGFILE
 
 VALIDATE $? "Installing MySQL client"
@@ -85,3 +84,8 @@ VALIDATE $? "Loaded countries and cities info"
 systemctl restart shipping &>>$LOGFILE
 
 VALIDATE $? "Restarting shipping"
+
+
+
+
+
